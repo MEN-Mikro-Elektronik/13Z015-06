@@ -7,19 +7,21 @@
 #    Description: Makefile definitions for the MSCAN (BOROMIR) driver for 
 #                 IO mapped (x86) FPGAs
 #
-#---------------------------------[ History ]---------------------------------
-#
-#   ts 17.02.2016   changed naming to z15 as with UART Z25 driver
-#
-#   ----- end of cvs maintenance ------
-#   $Log: driver_boromir_io.mak,v $
-#   Revision 1.1  2013/11/27 15:35:15  MRoth
-#   Initial Revision
-#
-#
 #-----------------------------------------------------------------------------
-#   (c) Copyright 2011 by MEN Mikro Elektronik GmbH, Nuremberg, Germany
+#   Copyright (c) 2011-2019, MEN Mikro Elektronik GmbH
 #*****************************************************************************
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=z15_io
 
