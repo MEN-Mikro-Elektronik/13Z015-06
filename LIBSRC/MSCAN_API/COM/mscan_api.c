@@ -10,50 +10,24 @@
  *
  *     Switches: -
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: mscan_api.c,v $
- * Revision 1.8  2010/02/25 18:05:05  amorbach
- * R: driver ported to MDIS5, new MDIS_API and men_typs
- * M1: Change type of path to MDIS_PATH
- * M2: Change return value of mscan_init() to MDIS_PATH
- * M3: Cast parameter "data" at M_setstat to INT32_OR_64
- *
- * Revision 1.7  2003/07/30 16:06:34  kp
- * added dummy documentation page to import MEN images
- *
- * Revision 1.6  2003/07/11 09:25:44  kp
- * added mscan_dump_internals
- *
- * Revision 1.5  2003/04/02 08:37:11  kp
- * 1) added Boromir note for mscan_error_counters()
- * 2) added __MAPILIB to all lib functions
- *
- * Revision 1.4  2003/02/07 13:16:39  kp
- * added comments to RTR frames
- *
- * Revision 1.3  2003/02/03 10:42:55  kp
- * First alpha release to SH Winding
- *
- * Revision 1.2  2003/01/29 14:03:13  kp
- * 1) Specification changes:
- * - mscan_read_nmsg and mscan_write_nmsg changed: They are now always
- * non-blocking, since M_getblock/M_setblock can't be passed an additional
- * 	 timeout value and M_getstat/M_setstat has too much overhead.
- * - add mscan_loopback()
- * - add mscan_error_counters()
- * - Changed Tx signal behaviour: now they are sent *after* the frame has
- * been transmitted over the bus
- * - add mscan_errobj_msg()
- * - add mscan_node_status()
- * 2) Added code for everything...
- *
- * Revision 1.1  2002/11/19 17:04:42  kp
- * Checkin to produce doxygen specification from source
- *
+/*
  *---------------------------------------------------------------------------
- * (c) Copyright 2002 by MEN mikro elektronik GmbH, Nuernberg, Germany 
+ * Copyright (c) 2002-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 /*! \mainpage
 

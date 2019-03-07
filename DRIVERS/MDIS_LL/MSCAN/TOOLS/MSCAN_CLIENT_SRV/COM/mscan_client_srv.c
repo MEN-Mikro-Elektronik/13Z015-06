@@ -15,36 +15,24 @@
  *     Switches: -
  *     Required: libraries: mdis_api, usr_oss, usr_utl, mscan_api
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: mscan_client_srv.c,v $
- * Revision 1.4  2013/11/27 15:35:16  MRoth
- * R: 1) recurring test errors, test frame objects were not reset correctly
- *    2) Signal handler not used
- *    3) cosmetics
- * M: 1) fixed loop in LoopbBasic function
- *       to reset the objects on every test cycle
- *    2) removed all Signal handler components
- *    3) reworked the usage and user outputs
- *
- * Revision 1.3  2013/09/19 10:54:53  MRoth
- * R: 1) error counter not working
- *    2) option missing to delay the mscan write/read commands
- * M: 1) implemented new error handling
- *    2) added timeout parameter
- *
- * Revision 1.2  2010/05/19 14:57:32  MRoth
- * R: 1) no inversion of frames (server)
- *    2) no error message if physical interface (e.g. SA8) is missing (client)
- * M: 1) implemented InvertFrame() function
- *    2) implemented checking of FPGA global error fifo
- *
- * Revision 1.1  2010/01/26 18:19:40  MRoth
- * Initial Revision
- *
+/*
  *---------------------------------------------------------------------------
- * (c) Copyright 2010 by MEN mikro elektronik GmbH, Nuernberg, Germany
+ * Copyright (c) 2010-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static const char RCSid[]="$Id: mscan_client_srv.c,v 1.4 2013/11/27 15:35:16 MRoth Exp $";
 
 /*--------------------------------------+

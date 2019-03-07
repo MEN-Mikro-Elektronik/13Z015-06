@@ -14,40 +14,24 @@
  *     Switches: -
  *     Required: libraries: mdis_api, usr_oss, usr_utl, mscan_api
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: mscan_loopb.c,v $
- * Revision 1.9  2010/02/25 18:04:33  amorbach
- * R: driver ported to MDIS5, new MDIS_API and men_typs
- * M: Change type of path to MDIS_PATH
- *
- * Revision 1.8  2009/05/12 11:50:09  ts
- * R: driver package build failed under windows
- * M: added specifier __MAPILIB to function SigHandler
- *
- * Revision 1.7  2009/05/08 18:12:25  ts
- * R: new CAN IPcore caused error during local loopback test at
- *    high baudrates
- * M: inserted small delay in transmit routine of local loopback test
- *
- * Revision 1.5  2004/06/14 11:58:17  kp
- * cosmetics
- *
- * Revision 1.4  2004/03/19 11:05:45  ub
- * Fixed: Try to terminate non-open path
- *
- * Revision 1.3  2003/07/11 09:25:42  kp
- * added test for mscan_dump_internals
- *
- * Revision 1.2  2003/02/03 10:42:52  kp
- * First alpha release to SH Winding
- *
- * Revision 1.1  2003/01/29 14:03:11  kp
- * Initial Revision
- *
+/*
  *---------------------------------------------------------------------------
- * (c) Copyright 2003 by MEN mikro elektronik GmbH, Nuernberg, Germany 
+ * Copyright (c) 2003-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 
 static const char RCSid[]="$Id: mscan_loopb.c,v 1.9 2010/02/25 18:04:33 amorbach Exp $";

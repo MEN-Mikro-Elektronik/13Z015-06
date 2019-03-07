@@ -10,40 +10,24 @@
  *                      
  *     Switches: -
  */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: mscan_api.h,v $
- * Revision 2.8  2010/02/25 18:04:54  amorbach
- * R: driver ported to MDIS5, new MDIS_API and men_typs
- * M: Change return value of mscan_init() to MDIS_PATH
- *
- * Revision 2.7  2008/09/26 12:13:50  ufranke
- * R: diab compiler warnings
- * M: cosmetics
- *
- * Revision 2.6  2005/03/24 10:18:32  kp
- * Added missing baudrate code MSCAN_BR_100K. Added low baudrates 20K/10K.
- * Existing applications using MSCAN_BR_ enum values higher then MSCAN_BR_125K
- * must be recompiled!
- *
- * Revision 2.5  2003/07/11 09:25:49  kp
- * added mscan_dump_internals
- *
- * Revision 2.4  2003/04/02 08:37:15  kp
- * added __MAPILIB to all lib functions
- *
- * Revision 2.3  2003/02/03 10:42:59  kp
- * First alpha release to SH Winding
- *
- * Revision 2.2  2003/01/29 14:03:20  kp
- * many changes for initial implementation
- *
- * Revision 2.1  2002/11/19 16:59:54  kp
- * Checkin to produce doxygen specification from source
- *
+/*
  *---------------------------------------------------------------------------
- * (c) Copyright 2002 by MEN mikro elektronik GmbH, Nuernberg, Germany 
+ * Copyright (c) 2002-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #ifndef _MSCAN_API_H
 #define _MSCAN_API_H
