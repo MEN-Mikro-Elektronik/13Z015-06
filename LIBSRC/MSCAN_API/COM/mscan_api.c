@@ -380,7 +380,7 @@
 */
 
 
-/*! \page dummy
+/*! \page mscanapidummy MEN logo
 
  \menimages
 
