@@ -13,29 +13,24 @@
  *
  *     Switches: -
  *     Required: libraries: mdis_api, usr_oss, usr_utl, mscan_api
- */
-/*-------------------------------[ History ]---------------------------------
- *
- * $Log: mscan_qstest.c,v $
- * Revision 1.4  2010/02/25 18:04:44  amorbach
- * R: driver ported to MDIS5, new MDIS_API and men_typs
- * M1: Change type of path1 and path2 to MDIS_PATH
- *
- * Revision 1.3  2009/05/12 11:49:16  ts
- * R: driver package build failed under windows
- * M: added specifier __MAPILIB to function SigHandler
- *
- * Revision 1.2  2004/06/14 11:58:25  kp
- * cosmetics
- *
- * Revision 1.1  2004/06/09 15:04:07  ub
- * Initial Revision
- *
  *
  *---------------------------------------------------------------------------
- * (c) Copyright 2004 by MEN mikro elektronik GmbH, Nuernberg, Germany 
+ * Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
-
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 static const char RCSid[]="$Id: mscan_qstest.c,v 1.4 2010/02/25 18:04:44 amorbach Exp $";
 
