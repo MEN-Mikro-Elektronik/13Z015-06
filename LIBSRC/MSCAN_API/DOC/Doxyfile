@@ -2,12 +2,12 @@
 @INCLUDE = DoxyfileCommon
 
 PROJECT_NAME           = "MSCAN API"
-PROJECT_NUMBER		   = "for MSCAN fileset $(MEN_FILESET_REVISION)"
+PROJECT_NUMBER         = 
 INPUT                  = \
-                    ../COM/mscan_api.c \
-					../COM/mscan_strings.c \
-                    $(MEN_COM_INC)/MEN/mscan_api.h \
-            
+                         ../COM/mscan_api.c \
+                         ../COM/mscan_strings.c \
+                         $(MEN_COM_INC)/MEN/mscan_api.h \
+
 EXAMPLE_RECURSIVE      = YES
 EXAMPLE_PATH           = $(MEN_MDIS_DRV_SRC)/MSCAN/TOOLS
 OUTPUT_DIRECTORY       = .
@@ -20,4 +20,3 @@ WARN_IF_UNDOCUMENTED   = YES
 GENERATE_HTMLHELP      = YES
 #TAGFILES               = ../../../../LIBSRC/MDIS_API/DOC/mdis_api.tag=../../../../../LIBSRC/MDIS_API/DOC/html
 #GENERATE_TAGFILE       = m78_driver.tag
-
