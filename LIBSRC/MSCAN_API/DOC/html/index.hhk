@@ -4,11 +4,6 @@
 <param name="FrameName" value="right">
 </OBJECT>
 <UL>
-  <LI><OBJECT type="text/sitemap"><param name="See Also" value="_RCSid"><param name="Name" value="_RCSid"></OBJECT>
-  <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a2"><param name="Name" value="mscan_api.c"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a0"><param name="Name" value="mscan_strings.c"></OBJECT>
-  </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="accField"><param name="Name" value="accField"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="structMSCAN__FILTER.html#o4"><param name="Name" value="MSCAN_FILTER"></OBJECT>
@@ -67,33 +62,32 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html"><param name="Name" value="mscan_api.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a2"><param name="Name" value="_RCSid"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a1"><param name="Name" value="DO_BLK_GETSTAT"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a0"><param name="Name" value="DO_BLK_SETSTAT"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a20"><param name="Name" value="mscan_clear_busoff"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a16"><param name="Name" value="mscan_clr_rcvsig"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a17"><param name="Name" value="mscan_clr_xmtsig"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a6"><param name="Name" value="mscan_config_msg"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a26"><param name="Name" value="mscan_dump_internals"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a21"><param name="Name" value="mscan_enable"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a25"><param name="Name" value="mscan_error_counters"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a3"><param name="Name" value="mscan_init"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a24"><param name="Name" value="mscan_node_status"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a19"><param name="Name" value="mscan_queue_clear"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a18"><param name="Name" value="mscan_queue_status"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a13"><param name="Name" value="mscan_read_error"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a9"><param name="Name" value="mscan_read_msg"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a10"><param name="Name" value="mscan_read_nmsg"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a22"><param name="Name" value="mscan_rtr"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a7"><param name="Name" value="mscan_set_bitrate"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a8"><param name="Name" value="mscan_set_bustiming"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a5"><param name="Name" value="mscan_set_filter"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a23"><param name="Name" value="mscan_set_loopback"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a14"><param name="Name" value="mscan_set_rcvsig"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a15"><param name="Name" value="mscan_set_xmtsig"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a4"><param name="Name" value="mscan_term"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a11"><param name="Name" value="mscan_write_msg"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a12"><param name="Name" value="mscan_write_nmsg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a19"><param name="Name" value="mscan_clear_busoff"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a15"><param name="Name" value="mscan_clr_rcvsig"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a16"><param name="Name" value="mscan_clr_xmtsig"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a5"><param name="Name" value="mscan_config_msg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a25"><param name="Name" value="mscan_dump_internals"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a20"><param name="Name" value="mscan_enable"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a24"><param name="Name" value="mscan_error_counters"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a2"><param name="Name" value="mscan_init"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a23"><param name="Name" value="mscan_node_status"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a18"><param name="Name" value="mscan_queue_clear"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a17"><param name="Name" value="mscan_queue_status"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a12"><param name="Name" value="mscan_read_error"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a8"><param name="Name" value="mscan_read_msg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a9"><param name="Name" value="mscan_read_nmsg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a21"><param name="Name" value="mscan_rtr"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a6"><param name="Name" value="mscan_set_bitrate"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a7"><param name="Name" value="mscan_set_bustiming"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a4"><param name="Name" value="mscan_set_filter"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a22"><param name="Name" value="mscan_set_loopback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a13"><param name="Name" value="mscan_set_rcvsig"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a14"><param name="Name" value="mscan_set_xmtsig"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a3"><param name="Name" value="mscan_term"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a10"><param name="Name" value="mscan_write_msg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a11"><param name="Name" value="mscan_write_nmsg"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html"><param name="Name" value="mscan_api.h"></OBJECT>
   <UL>
@@ -216,22 +210,22 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_clear_busoff"><param name="Name" value="mscan_clear_busoff"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a20"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a19"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a54"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_clr_rcvsig"><param name="Name" value="mscan_clr_rcvsig"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a16"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a15"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a50"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_clr_xmtsig"><param name="Name" value="mscan_clr_xmtsig"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a17"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a16"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a51"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_config_msg"><param name="Name" value="mscan_config_msg"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a6"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a5"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a40"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="MSCAN_DATA_OVERRUN"><param name="Name" value="MSCAN_DATA_OVERRUN"></OBJECT>
@@ -256,12 +250,12 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_dump_internals"><param name="Name" value="mscan_dump_internals"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a26"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a25"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a60"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_enable"><param name="Name" value="mscan_enable"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a21"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a20"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a55"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="MSCAN_ERR_BADDIR"><param name="Name" value="MSCAN_ERR_BADDIR"></OBJECT>
@@ -311,16 +305,16 @@
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_errmsg"><param name="Name" value="mscan_errmsg"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a61"><param name="Name" value="mscan_api.h"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a1"><param name="Name" value="mscan_strings.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a0"><param name="Name" value="mscan_strings.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_errobj_msg"><param name="Name" value="mscan_errobj_msg"></OBJECT>
   <UL>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a62"><param name="Name" value="mscan_api.h"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a2"><param name="Name" value="mscan_strings.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a1"><param name="Name" value="mscan_strings.c"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_error_counters"><param name="Name" value="mscan_error_counters"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a25"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a24"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a59"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="MSCAN_EXTENDED"><param name="Name" value="MSCAN_EXTENDED"></OBJECT>
@@ -348,12 +342,12 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_init"><param name="Name" value="mscan_init"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a3"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a2"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a37"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_node_status"><param name="Name" value="mscan_node_status"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a24"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a23"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a58"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="MSCAN_NODE_STATUS"><param name="Name" value="MSCAN_NODE_STATUS"></OBJECT>
@@ -378,32 +372,32 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_queue_clear"><param name="Name" value="mscan_queue_clear"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a19"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a18"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a53"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_queue_status"><param name="Name" value="mscan_queue_status"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a18"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a17"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a52"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_read_error"><param name="Name" value="mscan_read_error"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a13"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a12"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a47"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_read_msg"><param name="Name" value="mscan_read_msg"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a9"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a8"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a43"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_read_nmsg"><param name="Name" value="mscan_read_nmsg"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a10"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a9"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a44"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_rtr"><param name="Name" value="mscan_rtr"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a22"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a21"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a56"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="MSCAN_RTR"><param name="Name" value="MSCAN_RTR"></OBJECT>
@@ -412,43 +406,42 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_set_bitrate"><param name="Name" value="mscan_set_bitrate"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a7"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a6"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a41"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_set_bustiming"><param name="Name" value="mscan_set_bustiming"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a8"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a7"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a42"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_set_filter"><param name="Name" value="mscan_set_filter"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a5"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a4"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a39"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_set_loopback"><param name="Name" value="mscan_set_loopback"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a23"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a22"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a57"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_set_rcvsig"><param name="Name" value="mscan_set_rcvsig"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a14"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a13"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a48"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_set_xmtsig"><param name="Name" value="mscan_set_xmtsig"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a15"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a14"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a49"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html"><param name="Name" value="mscan_strings.c"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a0"><param name="Name" value="_RCSid"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a1"><param name="Name" value="mscan_errmsg"></OBJECT>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a2"><param name="Name" value="mscan_errobj_msg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a0"><param name="Name" value="mscan_errmsg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__strings_8c.html#a1"><param name="Name" value="mscan_errobj_msg"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_term"><param name="Name" value="mscan_term"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a4"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a3"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a38"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="MSCAN_USE_ACCFIELD"><param name="Name" value="MSCAN_USE_ACCFIELD"></OBJECT>
@@ -465,11 +458,11 @@
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_write_msg"><param name="Name" value="mscan_write_msg"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a11"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a10"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a45"><param name="Name" value="mscan_api.h"></OBJECT>
   </UL>
   <LI><OBJECT type="text/sitemap"><param name="See Also" value="mscan_write_nmsg"><param name="Name" value="mscan_write_nmsg"></OBJECT>
   <UL>
-    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a12"><param name="Name" value="mscan_api.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8c.html#a11"><param name="Name" value="mscan_api.c"></OBJECT>
     <LI><OBJECT type="text/sitemap"><param name="Local" value="mscan__api_8h.html#a46"><param name="Name" value="mscan_api.h"></OBJECT>
 </UL>

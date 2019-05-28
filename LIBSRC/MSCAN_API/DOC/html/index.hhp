@@ -23,10 +23,9 @@ functions.html
 functions_vars.html
 structMSCAN__FILTER.html
 structMSCAN__FRAME.html
-dummy.html
+mscanapidummy.html
 globals.html
 globals_func.html
-globals_vars.html
 globals_enum.html
 globals_eval.html
 globals_defs.html

@@ -11,8 +11,8 @@
 
 <div class="left_to_right" style="padding-top: 6px; background-color: #F0F0F0; height: 110px; border-bottom: 2px solid #D1D1D2;">
 	<!-- Titel -->
-	<img src="menlogo.gif" alt="MEN" style="float: left; height: 103px; width: 155px; margin: 0px;"></a>
-	<h1 style="margin: 0px; padding-top: 35px; padding-bottom: 0px;">MSCAN API &nbsp; for MSCAN fileset 2.22</h1>
+	<img src="menlogo.gif" alt="MEN" style="float: left; height: 103px; width: 155px; margin: 0px;">
+	<h1 style="margin: 0px; padding-top: 35px; padding-bottom: 0px;">MSCAN API &nbsp; </h1>
 	<h3>mscan_api.c File Reference</h3>
 </div>
 
@@ -32,81 +32,78 @@
 <tr><td class="memItemLeft" nowrap align=right valign=top>#define&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a1">DO_BLK_GETSTAT</a>(obj, code)</td></tr>
 
 <tr><td colspan=2><br><h2>Functions</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>MDIS_PATH __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a3">mscan_init</a> (char *device)</td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>MDIS_PATH __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a2">mscan_init</a> (char *device)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Open path to CAN device. </em> <a href="#a3"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a4">mscan_term</a> (MDIS_PATH path)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Open path to CAN device. </em> <a href="#a2"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a3">mscan_term</a> (MDIS_PATH path)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Close path to CAN device. </em> <a href="#a4"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a5">mscan_set_filter</a> (MDIS_PATH path, const <a class="el" href="structMSCAN__FILTER.html">MSCAN_FILTER</a> *filter1, const <a class="el" href="structMSCAN__FILTER.html">MSCAN_FILTER</a> *filter2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Close path to CAN device. </em> <a href="#a3"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a4">mscan_set_filter</a> (MDIS_PATH path, const <a class="el" href="structMSCAN__FILTER.html">MSCAN_FILTER</a> *filter1, const <a class="el" href="structMSCAN__FILTER.html">MSCAN_FILTER</a> *filter2)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set global acceptance filter. </em> <a href="#a5"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a6">mscan_config_msg</a> (MDIS_PATH path, u_int32 nr, <a class="el" href="mscan__api_8h.html#a65">MSCAN_DIR</a> dir, u_int32 qEntries, const <a class="el" href="structMSCAN__FILTER.html">MSCAN_FILTER</a> *filter)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set global acceptance filter. </em> <a href="#a4"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a5">mscan_config_msg</a> (MDIS_PATH path, u_int32 nr, <a class="el" href="mscan__api_8h.html#a65">MSCAN_DIR</a> dir, u_int32 qEntries, const <a class="el" href="structMSCAN__FILTER.html">MSCAN_FILTER</a> *filter)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Configure message object. </em> <a href="#a6"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a7">mscan_set_bitrate</a> (MDIS_PATH path, <a class="el" href="mscan__api_8h.html#a63">MSCAN_BITRATE</a> bitrate, u_int32 spl)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Configure message object. </em> <a href="#a5"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a6">mscan_set_bitrate</a> (MDIS_PATH path, <a class="el" href="mscan__api_8h.html#a63">MSCAN_BITRATE</a> bitrate, u_int32 spl)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Setup bustiming according to CIA DS 102 V2.0. </em> <a href="#a7"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a8">mscan_set_bustiming</a> (MDIS_PATH path, u_int8 brp, u_int8 sjw, u_int8 tseg1, u_int8 tseg2, u_int8 spl)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Setup bustiming according to CIA DS 102 V2.0. </em> <a href="#a6"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a7">mscan_set_bustiming</a> (MDIS_PATH path, u_int8 brp, u_int8 sjw, u_int8 tseg1, u_int8 tseg2, u_int8 spl)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Setup bustiming directly. </em> <a href="#a8"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a9">mscan_read_msg</a> (MDIS_PATH path, u_int32 nr, int32 timeout, <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> *msg)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Setup bustiming directly. </em> <a href="#a7"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a8">mscan_read_msg</a> (MDIS_PATH path, u_int32 nr, int32 timeout, <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> *msg)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read single frame from CAN object's receive FIFO. </em> <a href="#a9"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a10">mscan_read_nmsg</a> (MDIS_PATH path, u_int32 nr, int32 nFrames, <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> *msg)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read single frame from CAN object's receive FIFO. </em> <a href="#a8"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a9">mscan_read_nmsg</a> (MDIS_PATH path, u_int32 nr, int32 nFrames, <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> *msg)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read multiple frames from CAN object's receive FIFO. </em> <a href="#a10"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a11">mscan_write_msg</a> (MDIS_PATH path, u_int32 nr, int32 timeout, const <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> *msg)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read multiple frames from CAN object's receive FIFO. </em> <a href="#a9"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a10">mscan_write_msg</a> (MDIS_PATH path, u_int32 nr, int32 timeout, const <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> *msg)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Put single frame into CAN object's transmit FIFO. </em> <a href="#a11"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a12">mscan_write_nmsg</a> (MDIS_PATH path, u_int32 nr, int32 nFrames, const <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> *msg)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Put single frame into CAN object's transmit FIFO. </em> <a href="#a10"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a11">mscan_write_nmsg</a> (MDIS_PATH path, u_int32 nr, int32 nFrames, const <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> *msg)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Put multiple frames into CAN object's transmit FIFO. </em> <a href="#a12"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a13">mscan_read_error</a> (MDIS_PATH path, u_int32 *errCodeP, u_int32 *nrP)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Put multiple frames into CAN object's transmit FIFO. </em> <a href="#a11"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a12">mscan_read_error</a> (MDIS_PATH path, u_int32 *errCodeP, u_int32 *nrP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read error entry from driver's global error FIFO. </em> <a href="#a13"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a14">mscan_set_rcvsig</a> (MDIS_PATH path, u_int32 nr, int32 signal)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read error entry from driver's global error FIFO. </em> <a href="#a12"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a13">mscan_set_rcvsig</a> (MDIS_PATH path, u_int32 nr, int32 signal)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Install signal for frame receiption. </em> <a href="#a14"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a15">mscan_set_xmtsig</a> (MDIS_PATH path, u_int32 nr, int32 signal)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Install signal for frame receiption. </em> <a href="#a13"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a14">mscan_set_xmtsig</a> (MDIS_PATH path, u_int32 nr, int32 signal)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Install signal for frame transmission. </em> <a href="#a15"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a16">mscan_clr_rcvsig</a> (MDIS_PATH path, u_int32 nr)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Install signal for frame transmission. </em> <a href="#a14"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a15">mscan_clr_rcvsig</a> (MDIS_PATH path, u_int32 nr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a14">mscan_set_rcvsig()</a>. </em> <a href="#a16"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a17">mscan_clr_xmtsig</a> (MDIS_PATH path, u_int32 nr)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a13">mscan_set_rcvsig()</a>. </em> <a href="#a15"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a16">mscan_clr_xmtsig</a> (MDIS_PATH path, u_int32 nr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a15">mscan_set_xmtsig()</a>. </em> <a href="#a17"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a18">mscan_queue_status</a> (MDIS_PATH path, u_int32 nr, u_int32 *entriesP, <a class="el" href="mscan__api_8h.html#a65">MSCAN_DIR</a> *directionP)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a14">mscan_set_xmtsig()</a>. </em> <a href="#a16"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a17">mscan_queue_status</a> (MDIS_PATH path, u_int32 nr, u_int32 *entriesP, <a class="el" href="mscan__api_8h.html#a65">MSCAN_DIR</a> *directionP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get number of entries in an object's receive/transmit FIFO. </em> <a href="#a18"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a19">mscan_queue_clear</a> (MDIS_PATH path, u_int32 nr, int txabort)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get number of entries in an object's receive/transmit FIFO. </em> <a href="#a17"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a18">mscan_queue_clear</a> (MDIS_PATH path, u_int32 nr, int txabort)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clear object FIFO. </em> <a href="#a19"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a20">mscan_clear_busoff</a> (MDIS_PATH path)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Clear object FIFO. </em> <a href="#a18"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a19">mscan_clear_busoff</a> (MDIS_PATH path)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reset controller from busoff state. </em> <a href="#a20"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a21">mscan_enable</a> (MDIS_PATH path, u_int32 enable)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Reset controller from busoff state. </em> <a href="#a19"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a20">mscan_enable</a> (MDIS_PATH path, u_int32 enable)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enable/Disable controller's bus activity. </em> <a href="#a21"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a22">mscan_rtr</a> (MDIS_PATH path, u_int32 nr, u_int32 id)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enable/Disable controller's bus activity. </em> <a href="#a20"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a21">mscan_rtr</a> (MDIS_PATH path, u_int32 nr, u_int32 id)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Send a remote frame request. </em> <a href="#a22"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a23">mscan_set_loopback</a> (MDIS_PATH path, int enable)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Send a remote frame request. </em> <a href="#a21"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a22">mscan_set_loopback</a> (MDIS_PATH path, int enable)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Setup loopback mode. </em> <a href="#a23"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a24">mscan_node_status</a> (MDIS_PATH path, <a class="el" href="mscan__api_8h.html#a67">MSCAN_NODE_STATUS</a> *statusP)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Setup loopback mode. </em> <a href="#a22"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a23">mscan_node_status</a> (MDIS_PATH path, <a class="el" href="mscan__api_8h.html#a67">MSCAN_NODE_STATUS</a> *statusP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read CAN node status. </em> <a href="#a24"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a25">mscan_error_counters</a> (MDIS_PATH path, u_int8 *txErrCntP, u_int8 *rxErrCntP)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read CAN node status. </em> <a href="#a23"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a24">mscan_error_counters</a> (MDIS_PATH path, u_int8 *txErrCntP, u_int8 *rxErrCntP)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read CAN controller error counters. </em> <a href="#a25"></a><em><br><br></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a26">mscan_dump_internals</a> (MDIS_PATH path, char *buffer, int maxLen)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Read CAN controller error counters. </em> <a href="#a24"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a25">mscan_dump_internals</a> (MDIS_PATH path, char *buffer, int maxLen)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tell driver to dump internal state as a string. </em> <a href="#a26"></a><em><br><br></td></tr>
-<tr><td colspan=2><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align=right valign=top>const char&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8c.html#a2">_RCSid</a> [] = "$Id: mscan_api.c,v 1.8 2010/02/25 18:05:05 amorbach Exp $"</td></tr>
-
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Tell driver to dump internal state as a string. </em> <a href="#a25"></a><em><br><br></td></tr>
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
 API functions to access the MSCAN MDIS driver. 
@@ -189,7 +186,7 @@ Switches: -<hr><h2>Define Documentation</h2>
   </tr>
 </table>
 <hr><h2>Function Documentation</h2>
-<a name="a20" doxytag="mscan_api.c::mscan_clear_busoff"></a><p>
+<a name="a19" doxytag="mscan_api.c::mscan_clear_busoff"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -227,7 +224,7 @@ Reset controller from busoff state.
     </td>
   </tr>
 </table>
-<a name="a16" doxytag="mscan_api.c::mscan_clr_rcvsig"></a><p>
+<a name="a15" doxytag="mscan_api.c::mscan_clr_rcvsig"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -262,7 +259,7 @@ Reset controller from busoff state.
     <td>
 
 <p>
-Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a14">mscan_set_rcvsig()</a>. 
+Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a13">mscan_set_rcvsig()</a>. 
 <p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -276,7 +273,7 @@ Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a14">mscan
     </td>
   </tr>
 </table>
-<a name="a17" doxytag="mscan_api.c::mscan_clr_xmtsig"></a><p>
+<a name="a16" doxytag="mscan_api.c::mscan_clr_xmtsig"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -311,7 +308,7 @@ Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a14">mscan
     <td>
 
 <p>
-Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a15">mscan_set_xmtsig()</a>. 
+Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a14">mscan_set_xmtsig()</a>. 
 <p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -325,7 +322,7 @@ Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a15">mscan
     </td>
   </tr>
 </table>
-<a name="a6" doxytag="mscan_api.c::mscan_config_msg"></a><p>
+<a name="a5" doxytag="mscan_api.c::mscan_config_msg"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -384,7 +381,7 @@ Used to configure one of the 10 message objects provided by the MSCAN driver. Th
 By default, all message objects are disabled (i.e direction is set to <a class="el" href="mscan__api_8h.html#a65a28">MSCAN_DIR_DIS</a>).<p>
 This function creates the message object's FIFO with specified number of entries (<em>qentries</em>). It also configures the message object's local <em>filter</em> (See <a class="el" href="index.html#ConfFilt">Configure Filters</a> for more information).<p>
 To create the special error object, object #0, call<p>
-<div class="fragment"><pre>    <a class="code" href="mscan__api_8c.html#a6">mscan_config_msg</a>( path, 0, MSCAN_DIR_RCV, nEntries, NULL );
+<div class="fragment"><pre>    <a class="code" href="mscan__api_8c.html#a5">mscan_config_msg</a>( path, 0, MSCAN_DIR_RCV, nEntries, NULL );
 </pre></div><p>
 If the specified message object was already configured, any frames in the FIFO are lost, and the FIFO is reallocated.<p>
 <dl compact><dt><b>Remarks:</b></dt><dd>This function will not touch an installed signal for that object.</dd></dl>
@@ -405,7 +402,7 @@ If the specified message object was already configured, any frames in the FIFO a
     </td>
   </tr>
 </table>
-<a name="a26" doxytag="mscan_api.c::mscan_dump_internals"></a><p>
+<a name="a25" doxytag="mscan_api.c::mscan_dump_internals"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -451,7 +448,7 @@ Tell driver to dump internal state as a string.
 Driver will generate an ASCII string containing most important parameters of device. String will not be longer than <em>maxLen</em>     </td>
   </tr>
 </table>
-<a name="a21" doxytag="mscan_api.c::mscan_enable"></a><p>
+<a name="a20" doxytag="mscan_api.c::mscan_enable"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -502,7 +499,7 @@ Before enabling bus activity, message objects and bitrate must have been already
     </td>
   </tr>
 </table>
-<a name="a25" doxytag="mscan_api.c::mscan_error_counters"></a><p>
+<a name="a24" doxytag="mscan_api.c::mscan_error_counters"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -558,11 +555,11 @@ Both <em>txErrCntP</em> and <em>rxErrCntP</em> can be NULL; in this case the par
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error. In case of error, <em>errno</em> set to:<ul>
 <li><code>MSCAN_ERR_ONLINE</code>: controller was not disabled</li></ul>
 </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a24">mscan_node_status</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a23">mscan_node_status</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a3" doxytag="mscan_api.c::mscan_init"></a><p>
+<a name="a2" doxytag="mscan_api.c::mscan_init"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -595,7 +592,7 @@ Actions performed:<ul>
 <li>check for controller ready</li><li>reset all registers</li><li>set global acceptance to let all IDs pass through (standard and extended)</li></ul>
 <p>
 (Bus activity is left disabled by this function)<p>
-To enable controller activity configure all message objects, set bitrate and call <a class="el" href="mscan__api_8c.html#a21">mscan_enable()</a>.<p>
+To enable controller activity configure all message objects, set bitrate and call <a class="el" href="mscan__api_8c.html#a20">mscan_enable()</a>.<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>device</em>&nbsp;</td><td>MDIS device name </td></tr>
@@ -604,11 +601,11 @@ To enable controller activity configure all message objects, set bitrate and cal
 <dl compact><dt><b>Returns:</b></dt><dd>&gt;=0 path number or &lt;0= error In case of error, <em>errno</em> set to:<ul>
 <li>MSCAN_ERR_RESETACTIVE controller did not leave reset state???</li></ul>
 </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a4">mscan_term</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a3">mscan_term</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a24" doxytag="mscan_api.c::mscan_node_status"></a><p>
+<a name="a23" doxytag="mscan_api.c::mscan_node_status"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -652,11 +649,11 @@ Read CAN node status.
   </table>
 </dl>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error.</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a25">mscan_error_counters</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a24">mscan_error_counters</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a19" doxytag="mscan_api.c::mscan_queue_clear"></a><p>
+<a name="a18" doxytag="mscan_api.c::mscan_queue_clear"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -715,7 +712,7 @@ For transmit message FIFOs, if <em>txabort</em> is not 0, any pending transmit r
     </td>
   </tr>
 </table>
-<a name="a18" doxytag="mscan_api.c::mscan_queue_status"></a><p>
+<a name="a17" doxytag="mscan_api.c::mscan_queue_status"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -783,7 +780,7 @@ Both <em>entriesP</em> and <em>directionP</em> can be NULL; in this case the par
     </td>
   </tr>
 </table>
-<a name="a13" doxytag="mscan_api.c::mscan_read_error"></a><p>
+<a name="a12" doxytag="mscan_api.c::mscan_read_error"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -827,11 +824,11 @@ Both <em>entriesP</em> and <em>directionP</em> can be NULL; in this case the par
 Read error entry from driver's global error FIFO. 
 <p>
 For each error detected by the CAN controller one entry is inserted into the CAN's global error FIFO.<p>
-This function is used to retrieve these error entries. This function blocks until there is at least one entry in the error FIFO. You can check for error entries using <a class="el" href="mscan__api_8c.html#a18">mscan_queue_status()</a>.<p>
+This function is used to retrieve these error entries. This function blocks until there is at least one entry in the error FIFO. You can check for error entries using <a class="el" href="mscan__api_8c.html#a17">mscan_queue_status()</a>.<p>
 Each entry contains:<ul>
 <li>errcode (placed into <em>*errCodeP</em>): See <a class="el" href="mscan__api_8h.html#a64">MSCAN_ERRENTRY_CODE</a> for codes.</li><li>nr (placed into <em>*nrP</em>): contains the related message object number. For global errors, <em>nr</em> is always 0, for <code>MSCAN_QOVERRUN</code>, <em>nr</em> contains the related message object number (1....).</li></ul>
 <p>
-<dl compact><dt><b>Remarks:</b></dt><dd>FIFO overrun errors (<a class="el" href="mscan__api_8h.html#a64a26">MSCAN_QOVERRUN</a>) are generated only once until the user calls <a class="el" href="mscan__api_8c.html#a9">mscan_read_msg()</a> or mscan_read_nmsg.</dd></dl>
+<dl compact><dt><b>Remarks:</b></dt><dd>FIFO overrun errors (<a class="el" href="mscan__api_8h.html#a64a26">MSCAN_QOVERRUN</a>) are generated only once until the user calls <a class="el" href="mscan__api_8c.html#a8">mscan_read_msg()</a> or mscan_read_nmsg.</dd></dl>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>path</em>&nbsp;</td><td>MDIS path number for device </td></tr>
@@ -840,11 +837,11 @@ Each entry contains:<ul>
   </table>
 </dl>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error. </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a18">mscan_queue_status</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a17">mscan_queue_status</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a9" doxytag="mscan_api.c::mscan_read_msg"></a><p>
+<a name="a8" doxytag="mscan_api.c::mscan_read_msg"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -909,11 +906,11 @@ Depending on the operating system, this wait may be aborted by a deadly signal.<
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error. In case of error, <em>errno</em> set to:<ul>
 <li><code>MSCAN_ERR_NOMESSAGE</code>: no frame in receive buffer</li><li><code>MSCAN_ERR_BADMSGNUM</code>: illegal message object number</li><li><code>MSCAN_ERR_BADDIR</code>: object configured for transmit</li><li><code>ERR_OSS_TIMEOUT</code>: timeout occurred</li></ul>
 </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="index.html#Recv">Receiving Frames</a>, <a class="el" href="mscan__api_8c.html#a10">mscan_read_nmsg</a>, <a class="el" href="mscan__api_8c.html#a14">mscan_set_rcvsig</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="index.html#Recv">Receiving Frames</a>, <a class="el" href="mscan__api_8c.html#a9">mscan_read_nmsg</a>, <a class="el" href="mscan__api_8c.html#a13">mscan_set_rcvsig</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a10" doxytag="mscan_api.c::mscan_read_nmsg"></a><p>
+<a name="a9" doxytag="mscan_api.c::mscan_read_nmsg"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -963,9 +960,9 @@ Depending on the operating system, this wait may be aborted by a deadly signal.<
 Read multiple frames from CAN object's receive FIFO. 
 <p>
 Reads the next <em>nFrames</em> frames from the object's receive FIFO and copies the frames to the user's buffer pointed to by <em>msg</em>.<p>
-This is essentially the same as <a class="el" href="mscan__api_8c.html#a9">mscan_read_msg()</a>, but shows better performance when transferring large amounts of frames between the driver and application, since less context switches are required.<p>
-However, if user intends to read only a single frame, <a class="el" href="mscan__api_8c.html#a9">mscan_read_msg()</a> is faster.<p>
-Unlike <a class="el" href="mscan__api_8c.html#a9">mscan_read_msg()</a>, this function is always non blocking. If not enough frames in fifo, it copies the number of entries currently present in the fifo.<p>
+This is essentially the same as <a class="el" href="mscan__api_8c.html#a8">mscan_read_msg()</a>, but shows better performance when transferring large amounts of frames between the driver and application, since less context switches are required.<p>
+However, if user intends to read only a single frame, <a class="el" href="mscan__api_8c.html#a8">mscan_read_msg()</a> is faster.<p>
+Unlike <a class="el" href="mscan__api_8c.html#a8">mscan_read_msg()</a>, this function is always non blocking. If not enough frames in fifo, it copies the number of entries currently present in the fifo.<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>path</em>&nbsp;</td><td>MDIS path number for device </td></tr>
@@ -978,11 +975,11 @@ Unlike <a class="el" href="mscan__api_8c.html#a9">mscan_read_msg()</a>, this fun
 <li><code>MSCAN_ERR_BADMSGNUM</code>: illegal message object number</li><li><code>MSCAN_ERR_BADDIR</code>: object configured for transmit</li></ul>
 </dd></dl>
 <dl compact><dt><b>Remarks:</b></dt><dd>modifies current MDIS channel number </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="index.html#Recv">Receiving Frames</a>, <a class="el" href="mscan__api_8c.html#a9">mscan_read_msg</a>, <a class="el" href="mscan__api_8c.html#a14">mscan_set_rcvsig</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="index.html#Recv">Receiving Frames</a>, <a class="el" href="mscan__api_8c.html#a8">mscan_read_msg</a>, <a class="el" href="mscan__api_8c.html#a13">mscan_set_rcvsig</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a22" doxytag="mscan_api.c::mscan_rtr"></a><p>
+<a name="a21" doxytag="mscan_api.c::mscan_rtr"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1032,9 +1029,9 @@ It is the same as: <div class="fragment"><pre>   <a class="code" href="structMSC
    frm.<a class="code" href="structMSCAN__FRAME.html#o1">flags</a> = <a class="code" href="mscan__api_8h.html#a66a32">MSCAN_RTR</a>;
    frm.<a class="code" href="structMSCAN__FRAME.html#o2">dataLen</a> = 0;
 
-   <a class="code" href="mscan__api_8c.html#a11">mscan_write_msg</a>( path, nr, 1000, &amp;frm );
+   <a class="code" href="mscan__api_8c.html#a10">mscan_write_msg</a>( path, nr, 1000, &amp;frm );
 </pre></div><p>
-Requests a remote frame to be sent on the specified object. Once the frame has been received it is put into the object's receive FIFO and can be read using <a class="el" href="mscan__api_8c.html#a9">mscan_read_msg()</a>.<p>
+Requests a remote frame to be sent on the specified object. Once the frame has been received it is put into the object's receive FIFO and can be read using <a class="el" href="mscan__api_8c.html#a8">mscan_read_msg()</a>.<p>
 The message object must be configured for transmit mode. The remote request contains no data byte and the data length is set to zero.<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1044,12 +1041,12 @@ The message object must be configured for transmit mode. The remote request cont
   </table>
 </dl>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error.</dd></dl>
-<dl compact><dt><b>Remarks:</b></dt><dd>Using this function, the RTR frame has always a data length code of 0. This may cause problems in some implementations. Use <a class="el" href="mscan__api_8c.html#a11">mscan_write_msg()</a> instead</dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a11">mscan_write_msg()</a> </dd></dl>
+<dl compact><dt><b>Remarks:</b></dt><dd>Using this function, the RTR frame has always a data length code of 0. This may cause problems in some implementations. Use <a class="el" href="mscan__api_8c.html#a10">mscan_write_msg()</a> instead</dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a10">mscan_write_msg()</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a7" doxytag="mscan_api.c::mscan_set_bitrate"></a><p>
+<a name="a6" doxytag="mscan_api.c::mscan_set_bitrate"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1094,7 +1091,7 @@ Setup bustiming according to CIA DS 102 V2.0.
 <p>
 This function sets up the bustiming (bitrate, and timing segments) according to CIA DS 102 V2.0, based on the specified <em>bitrate</em> code.<p>
 Bus activity must be disabled when calling this function<p>
-This function computes the parameters and then calls <a class="el" href="mscan__api_8c.html#a8">mscan_set_bustiming()</a>.<p>
+This function computes the parameters and then calls <a class="el" href="mscan__api_8c.html#a7">mscan_set_bustiming()</a>.<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>path</em>&nbsp;</td><td>MDIS path number for device </td></tr>
@@ -1107,11 +1104,11 @@ This function computes the parameters and then calls <a class="el" href="mscan__
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error. In case of error, <em>errno</em> set to:<ul>
 <li><code>MSCAN_ERR_BADSPEED</code>: bitrate not supported</li><li><code>MSCAN_ERR_ONLINE</code>: controller was not disabled</li></ul>
 </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a8">mscan_set_bustiming</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a7">mscan_set_bustiming</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a8" doxytag="mscan_api.c::mscan_set_bustiming"></a><p>
+<a name="a7" doxytag="mscan_api.c::mscan_set_bustiming"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1172,7 +1169,7 @@ This function computes the parameters and then calls <a class="el" href="mscan__
 <p>
 Setup bustiming directly. 
 <p>
-This function allows to setup the bus timing parameters directly, in case the predefined CIA DS 102 2.0 parameters provided by <a class="el" href="mscan__api_8c.html#a7">mscan_set_bitrate()</a> are not sufficient.<p>
+This function allows to setup the bus timing parameters directly, in case the predefined CIA DS 102 2.0 parameters provided by <a class="el" href="mscan__api_8c.html#a6">mscan_set_bitrate()</a> are not sufficient.<p>
 Bus activity must be disabled when calling this function<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
@@ -1189,11 +1186,11 @@ Bus activity must be disabled when calling this function<p>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error. In case of error, <em>errno</em> set to:<ul>
 <li><code>MSCAN_ERR_BADTMDETAILS</code>: wrong parameter</li><li><code>MSCAN_ERR_ONLINE</code>: controller was not disabled</li></ul>
 </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a7">mscan_set_bitrate</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a6">mscan_set_bitrate</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a5" doxytag="mscan_api.c::mscan_set_filter"></a><p>
+<a name="a4" doxytag="mscan_api.c::mscan_set_filter"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1251,7 +1248,7 @@ See <a class="el" href="index.html#ConfFilt">Configure Filters</a> for more info
     </td>
   </tr>
 </table>
-<a name="a23" doxytag="mscan_api.c::mscan_set_loopback"></a><p>
+<a name="a22" doxytag="mscan_api.c::mscan_set_loopback"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1300,7 +1297,7 @@ Bus activity must be disabled when calling this function<p>
     </td>
   </tr>
 </table>
-<a name="a14" doxytag="mscan_api.c::mscan_set_rcvsig"></a><p>
+<a name="a13" doxytag="mscan_api.c::mscan_set_rcvsig"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1357,11 +1354,11 @@ Only one process can install a signal for a specific message object.<p>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error. In case of error, <em>errno</em> set to:<ul>
 <li><code>MSCAN_ERR_BADMSGNUM</code>: illegal message object number</li><li><code>MSCAN_ERR_BADDIR</code>: object configured for transmit</li><li><code>MSCAN_ERR_SIGBUSY</code>: signal already installed</li></ul>
 </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a16">mscan_clr_rcvsig</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a15">mscan_clr_rcvsig</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a15" doxytag="mscan_api.c::mscan_set_xmtsig"></a><p>
+<a name="a14" doxytag="mscan_api.c::mscan_set_xmtsig"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1417,11 +1414,11 @@ Only one process can install a signal for a specific message object.<p>
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error. In case of error, <em>errno</em> set to:<ul>
 <li><code>MSCAN_ERR_BADMSGNUM</code>: illegal message object number</li><li><code>MSCAN_ERR_BADDIR</code>: object configured for receive</li><li><code>MSCAN_ERR_SIGBUSY</code>: signal already installed</li></ul>
 </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a17">mscan_clr_xmtsig</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="mscan__api_8c.html#a16">mscan_clr_xmtsig</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a4" doxytag="mscan_api.c::mscan_term"></a><p>
+<a name="a3" doxytag="mscan_api.c::mscan_term"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1461,7 +1458,7 @@ Close path to CAN device.
     </td>
   </tr>
 </table>
-<a name="a11" doxytag="mscan_api.c::mscan_write_msg"></a><p>
+<a name="a10" doxytag="mscan_api.c::mscan_write_msg"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1527,11 +1524,11 @@ Depending on the operating system, this wait may be aborted by a deadly signal.<
 <dl compact><dt><b>Returns:</b></dt><dd>0 on success, or -1 on error. In case of error, <em>errno</em> set to:<ul>
 <li><code>MSCAN_ERR_BADMSGNUM</code>: illegal message object number</li><li><code>MSCAN_ERR_QFULL</code>: no space in FIFO (if wait=0)</li><li><code>MSCAN_ERR_BADDIR</code>: object configured for receive</li><li><code>ERR_OSS_TIMEOUT</code>: timeout occurred</li><li><code>ERR_OSS_SIG_OCCURED</code> a deadly signal occurred while waiting</li><li><code>MSCAN_ERR_NOTINIT</code> CAN not online</li></ul>
 </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="index.html#Transm">Transmitting Frames</a>, <a class="el" href="mscan__api_8c.html#a12">mscan_write_nmsg</a>, <a class="el" href="mscan__api_8c.html#a15">mscan_set_xmtsig</a> </dd></dl>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="index.html#Transm">Transmitting Frames</a>, <a class="el" href="mscan__api_8c.html#a11">mscan_write_nmsg</a>, <a class="el" href="mscan__api_8c.html#a14">mscan_set_xmtsig</a> </dd></dl>
     </td>
   </tr>
 </table>
-<a name="a12" doxytag="mscan_api.c::mscan_write_nmsg"></a><p>
+<a name="a11" doxytag="mscan_api.c::mscan_write_nmsg"></a><p>
 <table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -1581,9 +1578,9 @@ Depending on the operating system, this wait may be aborted by a deadly signal.<
 Put multiple frames into CAN object's transmit FIFO. 
 <p>
 Puts the specified CAN frames pointed to by <em>msg</em> into the object's FIFO.<p>
-This is essentially the same as <a class="el" href="mscan__api_8c.html#a11">mscan_write_msg()</a>, but shows better performance when transferring large amounts of frames between the driver and application, since less context switches are required.<p>
-However, if user intends to write only a single frame, <a class="el" href="mscan__api_8c.html#a11">mscan_write_msg()</a> is faster.<p>
-Unlike <a class="el" href="mscan__api_8c.html#a11">mscan_write_msg()</a>, this function is always non blocking. If not enough space left in FIFO it places only those entries into the fifo that fit into the fifo.<p>
+This is essentially the same as <a class="el" href="mscan__api_8c.html#a10">mscan_write_msg()</a>, but shows better performance when transferring large amounts of frames between the driver and application, since less context switches are required.<p>
+However, if user intends to write only a single frame, <a class="el" href="mscan__api_8c.html#a10">mscan_write_msg()</a> is faster.<p>
+Unlike <a class="el" href="mscan__api_8c.html#a10">mscan_write_msg()</a>, this function is always non blocking. If not enough space left in FIFO it places only those entries into the fifo that fit into the fifo.<p>
 <dl compact><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign=top><em>path</em>&nbsp;</td><td>MDIS path number for device </td></tr>
@@ -1596,30 +1593,7 @@ Unlike <a class="el" href="mscan__api_8c.html#a11">mscan_write_msg()</a>, this f
 <li><code>MSCAN_ERR_BADMSGNUM</code>: illegal message object number</li><li><code>MSCAN_ERR_BADDIR</code>: object configured for receive</li></ul>
 </dd></dl>
 <dl compact><dt><b>Remarks:</b></dt><dd>modifies current MDIS channel number </dd></dl>
-<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="index.html#Transm">Transmitting Frames</a>, <a class="el" href="mscan__api_8c.html#a11">mscan_write_msg</a>, <a class="el" href="mscan__api_8c.html#a15">mscan_set_xmtsig</a> </dd></dl>
-    </td>
-  </tr>
-</table>
-<hr><h2>Variable Documentation</h2>
-<a name="a2" doxytag="mscan_api.c::_RCSid"></a><p>
-<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
-  <tr>
-    <td class="mdRow">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td class="md" nowrap valign="top"> const char <a class="el" href="mscan__strings_8c.html#a0">_RCSid</a>[] = "$Id: mscan_api.c,v 1.8 2010/02/25 18:05:05 amorbach Exp $"<code> [static]</code>
-      </table>
-    </td>
-  </tr>
-</table>
-<table cellspacing=5 cellpadding=0 border=0>
-  <tr>
-    <td>
-      &nbsp;
-    </td>
-    <td>
-
-<p>
+<dl compact><dt><b>See also:</b></dt><dd><a class="el" href="index.html#Transm">Transmitting Frames</a>, <a class="el" href="mscan__api_8c.html#a10">mscan_write_msg</a>, <a class="el" href="mscan__api_8c.html#a14">mscan_set_xmtsig</a> </dd></dl>
     </td>
   </tr>
 </table>
@@ -1631,7 +1605,7 @@ Unlike <a class="el" href="mscan__api_8c.html#a11">mscan_write_msg()</a>, this f
 <!-- Footer -->
 	<p class="footer">
 	Generated for MSCAN API using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2015 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
 	</p>
 </div>
 

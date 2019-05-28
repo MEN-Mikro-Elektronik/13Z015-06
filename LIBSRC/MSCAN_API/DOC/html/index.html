@@ -11,8 +11,8 @@
 
 <div class="left_to_right" style="padding-top: 6px; background-color: #F0F0F0; height: 110px; border-bottom: 2px solid #D1D1D2;">
 	<!-- Titel -->
-	<img src="menlogo.gif" alt="MEN" style="float: left; height: 103px; width: 155px; margin: 0px;"></a>
-	<h1 style="margin: 0px; padding-top: 35px; padding-bottom: 0px;">MSCAN API &nbsp; for MSCAN fileset 2.22</h1>
+	<img src="menlogo.gif" alt="MEN" style="float: left; height: 103px; width: 155px; margin: 0px;">
+	<h1 style="margin: 0px; padding-top: 35px; padding-bottom: 0px;">MSCAN API &nbsp; </h1>
 	<h3>Main Page</h3>
 </div>
 
@@ -23,7 +23,7 @@
 <div class="qindex"><a class="qindexHL" href="index.html">Main&nbsp;Page</a> | <a class="qindex" href="annotated.html">Data&nbsp;Structures</a> | <a class="qindex" href="files.html">File&nbsp;List</a> | <a class="qindex" href="functions.html">Data&nbsp;Fields</a> | <a class="qindex" href="globals.html">Globals</a> | <a class="qindex" href="pages.html">Related&nbsp;Pages</a></div>
 <h1>MSCAN API Documentation</h1>
 <p>
-<h3 align="center">for MSCAN fileset 2.22 </h3>This document describes the features of the MSCAN driver API as well as most of the features of the underlying CAN chip (either Motorola Scalable CAN or MEN Boromir).<h2><a name="FuncOv"></a>
+This document describes the features of the MSCAN driver API as well as most of the features of the underlying CAN chip (either Motorola Scalable CAN or MEN Boromir).<h2><a name="FuncOv"></a>
 Functional Overview</h2>
 The main features of MSCAN driver for MDIS5 is and it's API are:<ul>
 <li>operates on direct CAN (layer 2) frames.</li><li>permits access to all features of the MSCAN CAN controller.</li><li>supports CAN Specification 2.0, standard and extended data and remote frames</li><li>programmable global acceptance filter (mask and code), standard or extended</li><li>10 message objects with FIFOs (provided by driver)</li><li>programmable acceptance filter for each RX object</li></ul>
@@ -32,7 +32,7 @@ The package consists of an MDIS5 low-level driver and a C library which provides
 Differences to SJA1000 API</h3>
 The MSCAN API is similar, but not identical to the API provided by the SJA1000 MDIS5 driver.<p>
 The differences are:<ul>
-<li>CAN frames are exchanged by means of <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> structures, not with single parameters to the read/write routines.</li><li>Additional API functions to exchange more than one can frame with the driver FIFOs for higher performance: <a class="el" href="mscan__api_8c.html#a10">mscan_read_nmsg()</a> and <a class="el" href="mscan__api_8c.html#a12">mscan_write_nmsg()</a>.</li><li>Well defined priority between transmit FIFOs, see <a class="el" href="index.html#Transm">Transmitting Frames</a></li><li>Different setup of receive filters, see <a class="el" href="index.html#ConfFilt">Configure Filters</a></li><li>Different parameters to <a class="el" href="mscan__api_8c.html#a6">mscan_config_msg()</a></li><li>Additional function to control bus timing directly: <a class="el" href="mscan__api_8c.html#a8">mscan_set_bustiming()</a>.</li><li>RTR receive handling different: For MSCAN, the application must handle received remote transmit requests. SJA1000 implementation seems to be broken.</li><li>Error codes renamed from <code>CPL_xxx</code> to <code>MSCAN_xxx</code>.</li><li>sja1000_read_register, sja1000_read_counter, sja1000_read_configuration, sja1000_read_alcr, sja1000_read_eccr not implemented since they are SJA1000 specific.</li><li>Additional call <a class="el" href="mscan__api_8c.html#a25">mscan_error_counters()</a> to read Rx/Tx error counters</li><li>Additional call <a class="el" href="mscan__api_8c.html#a24">mscan_node_status()</a> to get current node status</li><li>Additional filtering for individual IDs (as supported by sp82c200 driver)</li></ul>
+<li>CAN frames are exchanged by means of <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> structures, not with single parameters to the read/write routines.</li><li>Additional API functions to exchange more than one can frame with the driver FIFOs for higher performance: <a class="el" href="mscan__api_8c.html#a9">mscan_read_nmsg()</a> and <a class="el" href="mscan__api_8c.html#a11">mscan_write_nmsg()</a>.</li><li>Well defined priority between transmit FIFOs, see <a class="el" href="index.html#Transm">Transmitting Frames</a></li><li>Different setup of receive filters, see <a class="el" href="index.html#ConfFilt">Configure Filters</a></li><li>Different parameters to <a class="el" href="mscan__api_8c.html#a5">mscan_config_msg()</a></li><li>Additional function to control bus timing directly: <a class="el" href="mscan__api_8c.html#a7">mscan_set_bustiming()</a>.</li><li>RTR receive handling different: For MSCAN, the application must handle received remote transmit requests. SJA1000 implementation seems to be broken.</li><li>Error codes renamed from <code>CPL_xxx</code> to <code>MSCAN_xxx</code>.</li><li>sja1000_read_register, sja1000_read_counter, sja1000_read_configuration, sja1000_read_alcr, sja1000_read_eccr not implemented since they are SJA1000 specific.</li><li>Additional call <a class="el" href="mscan__api_8c.html#a24">mscan_error_counters()</a> to read Rx/Tx error counters</li><li>Additional call <a class="el" href="mscan__api_8c.html#a23">mscan_node_status()</a> to get current node status</li><li>Additional filtering for individual IDs (as supported by sp82c200 driver)</li></ul>
 <h3><a name="FIFOs"></a>
 Message Objects and FIFOs</h3>
 The driver provides up to 10 message object to the user, numbered from 0 to 9. Each object has it's own FIFO.<p>
@@ -54,14 +54,14 @@ If installed, a signal is sent to the application to signify the arrival of a ne
 FIFO Overrun Errors</h4>
 If the buffer FIFO was already full, the new frame is discarded and a MSCAN_QOVERRUN error entry is put into the error FIFO. Additionally a signal is sent to the application if a signal was installed for the error object.<h4><a name="RecvRtr"></a>
 Receiving RTR Frames</h4>
-When an RTR frame is received (and it matches the global and local filter), the frame is written into the corresponding object’s receive FIFO. Application can detect the receiption of an RTR frame by looking at the <em>flags</em> field of the <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> structure.<h4><a name="ReadMsg"></a>
+When an RTR frame is received (and it matches the global and local filter), the frame is written into the corresponding objectï¿½s receive FIFO. Application can detect the receiption of an RTR frame by looking at the <em>flags</em> field of the <a class="el" href="structMSCAN__FRAME.html">MSCAN_FRAME</a> structure.<h4><a name="ReadMsg"></a>
 Reading Received Frames</h4>
-The application can read received frames of a single message object by calling <a class="el" href="mscan__api_8h.html#a43">mscan_read_msg</a> or <a class="el" href="mscan__api_8h.html#a44">mscan_read_nmsg</a>. These functions read frame(s) from the object’s FIFO and returns the received data.<p>
+The application can read received frames of a single message object by calling <a class="el" href="mscan__api_8h.html#a43">mscan_read_msg</a> or <a class="el" href="mscan__api_8h.html#a44">mscan_read_nmsg</a>. These functions read frame(s) from the objectï¿½s FIFO and returns the received data.<p>
 <a class="el" href="mscan__api_8h.html#a43">mscan_read_msg</a> can be blocking or non-blocking if no frame is available. The timeout parameter specifies how long to wait until a frame arrives. <a class="el" href="mscan__api_8h.html#a44">mscan_read_nmsg</a> is always non-blocking.<p>
 The number of entries in the receive FIFO can be determined at any time by calling <a class="el" href="mscan__api_8h.html#a52">mscan_queue_status</a>. The FIFO can be cleared using <a class="el" href="mscan__api_8h.html#a53">mscan_queue_clear</a>.<p>
 It is possible that different objects are processed by different processes. For example, one process can wait for frames on object 1, while a second process can wait for frames on object 2.<h4><a name="RxUseSigs"></a>
 Using Signals for Receive</h4>
-The application can use <a class="el" href="mscan__api_8h.html#a48">mscan_set_rcvsig</a> to install a signal that is sent whenever a new frame is put into the object’s receive FIFO. A signal for a specific object can be installed by a single process only. Each frame causes one signal to be sent to the application. Sending of signals can be cleared using <a class="el" href="mscan__api_8h.html#a50">mscan_clr_rcvsig</a>.<h4><a name="ConfFilt"></a>
+The application can use <a class="el" href="mscan__api_8h.html#a48">mscan_set_rcvsig</a> to install a signal that is sent whenever a new frame is put into the objectï¿½s receive FIFO. A signal for a specific object can be installed by a single process only. Each frame causes one signal to be sent to the application. Sending of signals can be cleared using <a class="el" href="mscan__api_8h.html#a50">mscan_clr_rcvsig</a>.<h4><a name="ConfFilt"></a>
 Configure Filters</h4>
 MSCAN driver supports three different types of filters:<ul>
 <li>two global filters</li><li>local filter using <em>mask</em> and <em>code</em> for each Rx message object</li><li>additional local filtering for 11-bit IDs using an acceptance field</li></ul>
@@ -109,7 +109,7 @@ Note that the error FIFO must be configured like any other message object before
 Whenever the state of the CAN controller changes or when a driver internal error occurs, the driver puts a new error entry into the error FIFO. Each entry consists of an error code and the related message objects. If the error is global for all message objects, the "related message object" number is 0.<p>
 The following errors may occur:<p>
 <ul>
-<li><code>MSCAN_BUSOFF_SET</code>: Controller now in busoff state</li><li><code>MSCAN_BUSOFF_CLR</code>: Controller left busoff state</li><li><code>MSCAN_WARN_SET</code>: Controller has entered error passive state</li><li><code>MSCAN_WARN_CLR</code>: Controller has left error passive state</li><li><code>MSCAN_QOVERRUN</code>: Object’s receiver FIFO overflowed</li><li><code>MSCAN_DATA_OVERRUN</code>: Data overrun interrupt occurred (hardware receive FIFO full)</li></ul>
+<li><code>MSCAN_BUSOFF_SET</code>: Controller now in busoff state</li><li><code>MSCAN_BUSOFF_CLR</code>: Controller left busoff state</li><li><code>MSCAN_WARN_SET</code>: Controller has entered error passive state</li><li><code>MSCAN_WARN_CLR</code>: Controller has left error passive state</li><li><code>MSCAN_QOVERRUN</code>: Objectï¿½s receiver FIFO overflowed</li><li><code>MSCAN_DATA_OVERRUN</code>: Data overrun interrupt occurred (hardware receive FIFO full)</li></ul>
 <p>
 The application can read from the error FIFO by calling <a class="el" href="mscan__api_8h.html#a47">mscan_read_error</a>. This function returns the next entry from the error FIFO. This function is blocking, i.e. if there are no entries in the error FIFO it waits until an error entry is present.<p>
 You can query the number of entries in the error FIFO using <a class="el" href="mscan__api_8h.html#a52">mscan_queue_status</a> and clear the FIFO using <a class="el" href="mscan__api_8h.html#a53">mscan_queue_clear</a>.<p>
@@ -127,7 +127,7 @@ The MSCAN controller automatically recovers from bus off state. There is no need
 <!-- Footer -->
 	<p class="footer">
 	Generated for MSCAN API using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2015 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
 	</p>
 </div>
 

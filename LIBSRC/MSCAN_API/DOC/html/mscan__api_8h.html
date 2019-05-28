@@ -11,8 +11,8 @@
 
 <div class="left_to_right" style="padding-top: 6px; background-color: #F0F0F0; height: 110px; border-bottom: 2px solid #D1D1D2;">
 	<!-- Titel -->
-	<img src="menlogo.gif" alt="MEN" style="float: left; height: 103px; width: 155px; margin: 0px;"></a>
-	<h1 style="margin: 0px; padding-top: 35px; padding-bottom: 0px;">MSCAN API &nbsp; for MSCAN fileset 2.22</h1>
+	<img src="menlogo.gif" alt="MEN" style="float: left; height: 103px; width: 155px; margin: 0px;">
+	<h1 style="margin: 0px; padding-top: 35px; padding-bottom: 0px;">MSCAN API &nbsp; </h1>
 	<h3>mscan_api.h File Reference</h3>
 </div>
 
@@ -164,10 +164,10 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Install signal for frame transmission. </em> <a href="#a49"></a><em><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8h.html#a50">mscan_clr_rcvsig</a> (MDIS_PATH path, u_int32 nr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a14">mscan_set_rcvsig()</a>. </em> <a href="#a50"></a><em><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a13">mscan_set_rcvsig()</a>. </em> <a href="#a50"></a><em><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8h.html#a51">mscan_clr_xmtsig</a> (MDIS_PATH path, u_int32 nr)</td></tr>
 
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a15">mscan_set_xmtsig()</a>. </em> <a href="#a51"></a><em><br><br></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Deactivate signal installed by <a class="el" href="mscan__api_8c.html#a14">mscan_set_xmtsig()</a>. </em> <a href="#a51"></a><em><br><br></td></tr>
 <tr><td class="memItemLeft" nowrap align=right valign=top>int32 __MAPILIB&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="mscan__api_8h.html#a52">mscan_queue_status</a> (MDIS_PATH path, u_int32 nr, u_int32 *entriesP, <a class="el" href="mscan__api_8h.html#a65">MSCAN_DIR</a> *directionP)</td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Get number of entries in an object's receive/transmit FIFO. </em> <a href="#a52"></a><em><br><br></td></tr>
@@ -931,7 +931,7 @@ Used to configure one of the 10 message objects provided by the MSCAN driver. Th
 By default, all message objects are disabled (i.e direction is set to <a class="el" href="mscan__api_8h.html#a65a28">MSCAN_DIR_DIS</a>).<p>
 This function creates the message object's FIFO with specified number of entries (<em>qentries</em>). It also configures the message object's local <em>filter</em> (See <a class="el" href="index.html#ConfFilt">Configure Filters</a> for more information).<p>
 To create the special error object, object #0, call<p>
-<div class="fragment"><pre>    <a class="code" href="mscan__api_8c.html#a6">mscan_config_msg</a>( path, 0, MSCAN_DIR_RCV, nEntries, NULL );
+<div class="fragment"><pre>    <a class="code" href="mscan__api_8c.html#a5">mscan_config_msg</a>( path, 0, MSCAN_DIR_RCV, nEntries, NULL );
 </pre></div><p>
 If the specified message object was already configured, any frames in the FIFO are lost, and the FIFO is reallocated.<p>
 <dl compact><dt><b>Remarks:</b></dt><dd>This function will not touch an installed signal for that object.</dd></dl>
@@ -1657,7 +1657,7 @@ It is the same as: <div class="fragment"><pre>   <a class="code" href="structMSC
    frm.<a class="code" href="structMSCAN__FRAME.html#o1">flags</a> = <a class="code" href="mscan__api_8h.html#a66a32">MSCAN_RTR</a>;
    frm.<a class="code" href="structMSCAN__FRAME.html#o2">dataLen</a> = 0;
 
-   <a class="code" href="mscan__api_8c.html#a11">mscan_write_msg</a>( path, nr, 1000, &amp;frm );
+   <a class="code" href="mscan__api_8c.html#a10">mscan_write_msg</a>( path, nr, 1000, &amp;frm );
 </pre></div><p>
 Requests a remote frame to be sent on the specified object. Once the frame has been received it is put into the object's receive FIFO and can be read using <a class="el" href="mscan__api_8h.html#a43">mscan_read_msg()</a>.<p>
 The message object must be configured for transmit mode. The remote request contains no data byte and the data length is set to zero.<p>
@@ -2233,7 +2233,7 @@ Unlike <a class="el" href="mscan__api_8h.html#a45">mscan_write_msg()</a>, this f
 <!-- Footer -->
 	<p class="footer">
 	Generated for MSCAN API using <a href="http://www.doxygen.org">doxygen</a>.<br>
-	Copyright &copy; 2015 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
+	Copyright &copy; 2019 <a href="http://www.men.de">MEN Mikro Elektronik GmbH</a>. All Rights Reserved.
 	</p>
 </div>
 
