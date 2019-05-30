@@ -3,8 +3,6 @@
  *        \file  mscan_int.h
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2011/09/16 15:01:55 $
- *    $Revision: 1.4 $
  * 
  *  	 \brief  Internal header file for MSCAN driver
  *                      

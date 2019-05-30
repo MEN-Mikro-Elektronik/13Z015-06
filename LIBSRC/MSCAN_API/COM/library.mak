@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #  
 #         Author: kp
-#          $Date: 2003/01/29 14:03:16 $
-#      $Revision: 1.1 $
 #                      
 #    Description: Makefile descriptor file for MSCAN_API lib
 #                      
@@ -23,6 +21,11 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=mscan_api
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13Z015-06_02_25-12-g6b79c7c-dirty_2019-05-29"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
+MAK_SWITCH=$(SW_PREFIX)$(DEF_REVISION)
 
 
 MAK_INCL=$(MEN_INC_DIR)/men_typs.h    	\

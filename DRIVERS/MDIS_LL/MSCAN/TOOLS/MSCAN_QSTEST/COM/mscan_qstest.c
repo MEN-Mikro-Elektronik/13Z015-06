@@ -3,8 +3,6 @@
  *        \file  mscan_qstest.c
  *
  *      \author  ulrich.bogensperger@men.de
- *        $Date: 2010/02/25 18:04:44 $
- *    $Revision: 1.4 $
  * 
  *  	 \brief  Test tool for two MSCAN controllers
  *
@@ -32,7 +30,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static const char RCSid[]="$Id: mscan_qstest.c,v 1.4 2010/02/25 18:04:44 amorbach Exp $";
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -44,6 +41,8 @@ static const char RCSid[]="$Id: mscan_qstest.c,v 1.4 2010/02/25 18:04:44 amorbac
 #include <MEN/mdis_err.h>
 #include <MEN/usr_err.h>
 #include <MEN/mscan_api.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 
 /*--------------------------------------+
@@ -109,7 +108,7 @@ static void usage(void)
 		"  -n=<runs>    number of runs through test      [1]\n"
 		"  -s           stop on first error ............ [no]\n" );
 
-	printf("(c) 2004 by MEN Mikro Elektronik GmbH\n%s\n", RCSid );
+	printf("(c) 2004 by MEN Mikro Elektronik GmbH\n%s\n", IdentString );
 }
 
 /**********************************************************************/

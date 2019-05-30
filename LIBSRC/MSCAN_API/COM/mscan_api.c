@@ -3,8 +3,6 @@
  *        \file  mscan_api.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2010/02/25 18:05:05 $
- *    $Revision: 1.8 $
  * 
  *  	 \brief  API functions to access the MSCAN MDIS driver
  *
@@ -393,6 +391,8 @@
 #include <MEN/mdis_api.h>
 #include <MEN/mscan_api.h>
 #include <MEN/mscan_drv.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------+
 |  DEFINES                        |

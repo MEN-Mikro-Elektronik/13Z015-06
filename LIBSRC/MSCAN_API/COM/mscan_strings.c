@@ -3,8 +3,6 @@
  *        \file  mscan_strings.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2003/04/02 08:37:13 $
- *    $Revision: 1.2 $
  * 
  *  	 \brief  number to string conversion routines for MSCAN_API
  *
@@ -35,6 +33,8 @@
 #include <MEN/mdis_api.h>
 #include <MEN/mscan_api.h>
 #include <MEN/mscan_drv.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /**********************************************************************/
 /** Convert API error code to string

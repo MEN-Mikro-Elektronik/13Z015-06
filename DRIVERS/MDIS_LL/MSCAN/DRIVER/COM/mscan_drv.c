@@ -3,8 +3,6 @@
  *        \file  mscan_drv.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2013/03/27 09:54:36 $
- *    $Revision: 1.19 $
  * 
  *  	 \brief  Low level driver for MSCAN and MEN Boromir controller chips
  *
@@ -45,7 +43,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static const char RCSid[]="$Id: mscan_drv.c,v 1.19 2013/03/27 09:54:36 gvarlet Exp $";
 
 #include "mscan_int.h"
 

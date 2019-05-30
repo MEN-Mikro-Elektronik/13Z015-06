@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: michael.roth@men.de
-#          $Date: 2013/11/27 15:35:15 $
-#      $Revision: 1.1 $
 #
 #    Description: Makefile definitions for the MSCAN (BOROMIR) driver for 
 #                 IO mapped (x86) FPGAs
@@ -24,8 +22,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=z15_io
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13Z015-06_02_25-12-g6b79c7c-dirty_2019-05-29"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_SWITCH= $(SW_PREFIX)MAC_IO_MAPPED \
+		$(SW_PREFIX)$(DEF_REVISION) \
 			$(SW_PREFIX)MSCAN_IS_Z15 \
 			$(SW_PREFIX)MSCAN_VARIANT=Z15
 

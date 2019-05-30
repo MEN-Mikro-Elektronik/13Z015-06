@@ -3,8 +3,6 @@
  *        \file  mscan_api.h
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2010/02/25 18:04:54 $
- *    $Revision: 2.8 $
  * 
  *  	 \brief  Header file for MSCAN_API
  *                      

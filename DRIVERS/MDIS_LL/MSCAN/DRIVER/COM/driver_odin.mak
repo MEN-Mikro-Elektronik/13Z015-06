@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: kp
-#          $Date: 2004/06/14 11:58:09 $
-#      $Revision: 1.2 $
 #
 #    Description: Makefile definitions for the MSCAN (ODIN) driver
 #                 
@@ -24,8 +22,13 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=canodin
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13Z015-06_02_25-12-g6b79c7c-dirty_2019-05-29"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
 
 MAK_SWITCH= $(SW_PREFIX)MAC_MEM_MAPPED \
+		$(SW_PREFIX)$(DEF_REVISION) \
 			$(SW_PREFIX)MSCAN_IS_ODIN\
 			$(SW_PREFIX)MSCAN_VARIANT=CANODIN
 

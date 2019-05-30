@@ -3,8 +3,6 @@
  *         Name: mscan_drv.h
  *
  *       Author: kp
- *        $Date: 2003/07/11 09:25:47 $
- *    $Revision: 2.3 $
  *
  *  Description: Header file for MSCAN driver
  *               - MSCAN specific status codes

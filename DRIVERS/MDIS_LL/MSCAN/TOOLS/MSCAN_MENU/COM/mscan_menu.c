@@ -3,8 +3,6 @@
  *        \file  mscan_menu.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2010/02/25 18:04:38 $
- *    $Revision: 1.5 $
  * 
  *  	 \brief  Menu driven test tool for MSCAN driver
  *
@@ -30,7 +28,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
  
-static const char RCSid[]="$Id: mscan_menu.c,v 1.5 2010/02/25 18:04:38 amorbach Exp $";
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,6 +40,8 @@ static const char RCSid[]="$Id: mscan_menu.c,v 1.5 2010/02/25 18:04:38 amorbach 
 #include <MEN/mdis_err.h>
 #include <MEN/usr_err.h>
 #include <MEN/mscan_api.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------------+
 |   DEFINES                             |
@@ -82,7 +81,7 @@ static void usage(void)
 {
 	printf(	"usage: mscan_menu <device>\n");
 
-	printf("(c) 2003 by MEN Mikro Elektronik GmbH\n%s\n", RCSid );
+	printf("(c) 2003 by MEN Mikro Elektronik GmbH\n%s\n", IdentString );
 }
 
 

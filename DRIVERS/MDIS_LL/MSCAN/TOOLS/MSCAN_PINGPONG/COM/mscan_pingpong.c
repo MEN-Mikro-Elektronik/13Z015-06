@@ -3,8 +3,6 @@
  *        \file  mscan_pingpong.c
  *
  *      \author  uf
- *        $Date: 2010/01/26 14:44:37 $
- *    $Revision: 1.4 $
  *
  *  	 \brief  Test tool for 2 MSCAN devices with external loop
  *
@@ -30,7 +28,6 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-static const char RCSid[]="$Id: mscan_pingpong.c,v 1.4 2010/01/26 14:44:37 MRoth Exp $";
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,6 +40,8 @@ static const char RCSid[]="$Id: mscan_pingpong.c,v 1.4 2010/01/26 14:44:37 MRoth
 #include <MEN/usr_err.h>
 #include <MEN/mscan_api.h>
 #include <MEN/mscan_drv.h>		/* only for MSCAN_MAXIRQTIME */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------------+
 |   DEFINES                             |
@@ -198,7 +197,7 @@ static void usage(void)
 		te++;
 	}
 
-	printf("(c) 2003 by MEN Mikro Elektronik GmbH\n%s\n", RCSid );
+	printf("(c) 2003 by MEN Mikro Elektronik GmbH\n%s\n", IdentString );
 }
 
 /**********************************************************************/

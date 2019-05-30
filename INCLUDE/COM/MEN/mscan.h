@@ -3,8 +3,6 @@
  *         Name: mscan.h
  *
  *       Author: kp
- *        $Date: 2010/02/25 18:04:50 $
- *    $Revision: 2.4 $
  * 
  *  Description: register layout for MSCAN (Motorola Scalable CAN/MEN Boromir)
  *                      

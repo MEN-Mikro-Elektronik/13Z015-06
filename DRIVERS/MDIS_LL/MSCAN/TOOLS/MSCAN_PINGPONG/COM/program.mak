@@ -1,8 +1,6 @@
 #***************************  M a k e f i l e  *******************************
 #
 #         Author: uf
-#          $Date: 2008/10/16 11:41:36 $
-#      $Revision: 1.1 $
 #
 #    Description: Makefile definitions for MSCAN tool
 #
@@ -23,6 +21,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=mscan_pingpong
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13Z015-06_02_25-12-g6b79c7c-dirty_2019-05-29"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
+MAK_SWITCH=$(SW_PREFIX)$(DEF_REVISION)
 
 MAK_LIBS=$(LIB_PREFIX)$(MEN_LIB_DIR)/mscan_api$(LIB_SUFFIX)     \
 		 $(LIB_PREFIX)$(MEN_LIB_DIR)/mdis_api$(LIB_SUFFIX)    \

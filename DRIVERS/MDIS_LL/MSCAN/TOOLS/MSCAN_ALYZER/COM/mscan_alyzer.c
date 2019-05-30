@@ -3,8 +3,6 @@
  *        \file  mscan_alyzer.c
  *
  *      \author  klaus.popp@men.de
- *        $Date: 2010/02/25 18:04:27 $
- *    $Revision: 1.9 $
  * 
  *  	 \brief  Test tool for MSCAN driver against CANalyzer
  *
@@ -49,7 +47,6 @@
 */
 
 
-static const char RCSid[]="$Id: mscan_alyzer.c,v 1.9 2010/02/25 18:04:27 amorbach Exp $";
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -62,6 +59,8 @@ static const char RCSid[]="$Id: mscan_alyzer.c,v 1.9 2010/02/25 18:04:27 amorbac
 #include <MEN/usr_err.h>
 #include <MEN/mscan_api.h>
 #include <MEN/mscan_drv.h>		/* only for MSCAN_MAXIRQTIME */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------------+
 |   DEFINES                             |
@@ -166,7 +165,7 @@ static void usage(void)
 		te++;
 	}
 
-	printf("(c) 2003 by MEN Mikro Elektronik GmbH\n%s\n", RCSid );
+	printf("(c) 2003 by MEN Mikro Elektronik GmbH\n%s\n", IdentString );
 }
 
 /**********************************************************************/

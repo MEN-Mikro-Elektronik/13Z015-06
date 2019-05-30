@@ -3,8 +3,6 @@
  *        \file  mscan_client_srv.c
  *
  *      \author  michael.roth@men.de
- *        $Date: 2013/11/27 15:35:16 $
- *    $Revision: 1.4 $
  *
  *  	 \brief  Test tool for MSCAN controller interface
  *
@@ -33,7 +31,6 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-static const char RCSid[]="$Id: mscan_client_srv.c,v 1.4 2013/11/27 15:35:16 MRoth Exp $";
 
 /*--------------------------------------+
 |   INCLUDES                            |
@@ -49,6 +46,8 @@ static const char RCSid[]="$Id: mscan_client_srv.c,v 1.4 2013/11/27 15:35:16 MRo
 #include <MEN/usr_err.h>
 #include <MEN/mscan_api.h>
 #include <MEN/mscan_drv.h>		/* only for MSCAN_MAXIRQTIME */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------------+
 |   DEFINES                             |
