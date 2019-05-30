@@ -46,6 +46,8 @@
 
 #include "mscan_int.h"
 
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
+
 /*-----------------------------------------+
 |  PROTOTYPES                              |
 +-----------------------------------------*/
@@ -2298,7 +2300,7 @@ static int32 MscanDumpInternals( MSCAN_HANDLE *h, char *buffer, int maxLen)
 
    *bp = '\0';
 
-   ADDSTR((o,lb, "%s\n", RCSid ));
+   ADDSTR((o,lb, "%s\n", IdentString ));
    ADDSTR((o,lb, "MSCAN REGS:\n"));
    ADDSTR((o,lb, " CTL0=%02x CTL1=%02x\n", MSREAD( ma, MSCAN_CTL0 ),
 			MSREAD( ma, MSCAN_CTL1 )));

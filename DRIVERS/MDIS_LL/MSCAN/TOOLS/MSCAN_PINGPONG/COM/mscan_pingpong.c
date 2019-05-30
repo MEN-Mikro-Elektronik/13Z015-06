@@ -197,7 +197,7 @@ static void usage(void)
 		te++;
 	}
 
-	printf("(c) 2003 by MEN Mikro Elektronik GmbH\n%s\n", IdentString );
+	printf("Copyright (c) 2008-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString );
 }
 
 /**********************************************************************/

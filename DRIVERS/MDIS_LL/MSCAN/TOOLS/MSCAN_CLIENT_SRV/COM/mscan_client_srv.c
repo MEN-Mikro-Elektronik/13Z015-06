@@ -125,7 +125,7 @@ static void usage( void )
         "     mscan_client_srv boromir_1 \n"
         "\n - run application in client mode (500kBit, 50 cycles): \n"
         "     mscan_client_srv boromir_1 -b=2 -n=50 \n"
-        "\n(c)Copyright 2013 by MEN Mikro Elektronik GmbH\n%s\n\n", RCSid
+        "\nCopyright (c) 2010-2019, MEN Mikro Elektronik GmbH\n%s\n\n", IdentString
 	);
 }
 

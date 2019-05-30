@@ -108,7 +108,7 @@ static void usage(void)
 		"  -n=<runs>    number of runs through test      [1]\n"
 		"  -s           stop on first error ............ [no]\n" );
 
-	printf("(c) 2004 by MEN Mikro Elektronik GmbH\n%s\n", IdentString );
+	printf("Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString );
 }
 
 /**********************************************************************/

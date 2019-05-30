@@ -81,7 +81,7 @@ static void usage(void)
 {
 	printf(	"usage: mscan_menu <device>\n");
 
-	printf("(c) 2003 by MEN Mikro Elektronik GmbH\n%s\n", IdentString );
+	printf("Copyright (c) 2003-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString );
 }
 
 
