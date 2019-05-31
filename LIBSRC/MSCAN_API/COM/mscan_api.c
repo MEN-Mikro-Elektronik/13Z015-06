@@ -392,7 +392,6 @@
 #include <MEN/mscan_api.h>
 #include <MEN/mscan_drv.h>
 
-static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------+
 |  DEFINES                        |
