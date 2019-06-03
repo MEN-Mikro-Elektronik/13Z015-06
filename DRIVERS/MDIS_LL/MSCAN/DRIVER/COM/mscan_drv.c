@@ -868,7 +868,7 @@ void _MSCAN_GetEntry( LL_ENTRY* drvP )
 /** Return driver ident string */
 static char* Ident( void )
 {
-    return( "MSCAN - MSCAN low level driver: $Id: mscan_drv.c,v 1.19 2013/03/27 09:54:36 gvarlet Exp $" );
+    return( (char*) IdentString );
 }
 
 /**********************************************************************/
