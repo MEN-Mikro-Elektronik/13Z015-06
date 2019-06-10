@@ -3,8 +3,8 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
 	<name>13z01506</name>
 	<description>MDIS5 driver package for MSCAN</description>
-	<date>2013-11-27</date>
-	<revision>2.20</revision>
+	<date>2019-06-03</date>
+	<revision>13Z015-06_02_25-16-g0443fa3</revision>
 	<docroot>LIBSRC/MSCAN_API/DOC/html/index.html</docroot>
 	<!-- Models -->
 	<modellist>
