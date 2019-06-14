@@ -4,7 +4,6 @@
 #MDIS_COMMIT=d561d74771f6606d6ba72690bc36bdedbbac14be
 
 PROJECT_NAME           = "MSCAN API"
-PROJECT_NUMBER         = 
 INPUT                  = \
                          ../COM/mscan_api.c \
                          ../COM/mscan_strings.c \
