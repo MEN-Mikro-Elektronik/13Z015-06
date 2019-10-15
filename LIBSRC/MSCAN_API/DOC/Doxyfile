@@ -1,7 +1,7 @@
 @INCLUDE_PATH = $(MEN_DOXYGENTMPL)
 @INCLUDE = DoxyfileCommon
 
-#MDIS_COMMIT=d561d74771f6606d6ba72690bc36bdedbbac14be
+#MDIS_COMMIT=02eb750e37af4f014fd1b2d92e3bcf117699fc26
 
 PROJECT_NAME           = "MSCAN API"
 INPUT                  = \
