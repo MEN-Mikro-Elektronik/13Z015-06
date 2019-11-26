@@ -14,7 +14,7 @@
  */
 /*
  *---------------------------------------------------------------------------
- * Copyright (c) 2003-2019, MEN Mikro Elektronik GmbH
+ * Copyright 2003-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 /*
 * This program is free software: you can redistribute it and/or modify
@@ -197,7 +197,7 @@ static void usage(void)
 		te++;
 	}
 
-	printf("Copyright (c) 2003-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString );
+	printf("Copyright 2003-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString );
 }
 
 /**********************************************************************/

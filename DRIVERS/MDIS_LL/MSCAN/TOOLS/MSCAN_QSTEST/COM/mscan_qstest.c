@@ -13,7 +13,7 @@
  *     Required: libraries: mdis_api, usr_oss, usr_utl, mscan_api
  *
  *---------------------------------------------------------------------------
- * Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH
+ * Copyright 2004-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 /*
 * This program is free software: you can redistribute it and/or modify
@@ -108,7 +108,7 @@ static void usage(void)
 		"  -n=<runs>    number of runs through test      [1]\n"
 		"  -s           stop on first error ............ [no]\n" );
 
-	printf("Copyright (c) 2004-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString );
+	printf("Copyright 2004-2019, MEN Mikro Elektronik GmbH\n%s\n", IdentString );
 }
 
 /**********************************************************************/

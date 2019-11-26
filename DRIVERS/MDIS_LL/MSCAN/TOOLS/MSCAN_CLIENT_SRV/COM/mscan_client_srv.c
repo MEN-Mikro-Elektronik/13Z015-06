@@ -15,7 +15,7 @@
  */
 /*
  *---------------------------------------------------------------------------
- * Copyright (c) 2010-2019, MEN Mikro Elektronik GmbH
+ * Copyright 2010-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 /*
 * This program is free software: you can redistribute it and/or modify
@@ -125,7 +125,7 @@ static void usage( void )
         "     mscan_client_srv boromir_1 \n"
         "\n - run application in client mode (500kBit, 50 cycles): \n"
         "     mscan_client_srv boromir_1 -b=2 -n=50 \n"
-        "\nCopyright (c) 2010-2019, MEN Mikro Elektronik GmbH\n%s\n\n", IdentString
+        "\nCopyright 2010-2019, MEN Mikro Elektronik GmbH\n%s\n\n", IdentString
 	);
 }
 

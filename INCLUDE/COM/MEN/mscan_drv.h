@@ -12,7 +12,7 @@
  *               _LL_DRV_
  *				 B5
  *---------------------------------------------------------------------------
- * Copyright (c) 2002-2019, MEN Mikro Elektronik GmbH
+ * Copyright 2002-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 /*
  * This library is free software; you can redistribute it and/or
