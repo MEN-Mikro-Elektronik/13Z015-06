@@ -1609,14 +1609,14 @@ static void IrqRx( MSCAN_HANDLE *h )
 	frm.id = id;
 
 	switch( frm.dataLen = (MSREAD( ma, MSCAN_RXDLR ) & 0xf) ){
-	case 8:	frm.data[7] = MSREAD( ma, MSCAN_RXDSR7 );
-	case 7:	frm.data[6] = MSREAD( ma, MSCAN_RXDSR6 );
-	case 6:	frm.data[5] = MSREAD( ma, MSCAN_RXDSR5 );
-	case 5:	frm.data[4] = MSREAD( ma, MSCAN_RXDSR4 );
-	case 4:	frm.data[3] = MSREAD( ma, MSCAN_RXDSR3 );
-	case 3:	frm.data[2] = MSREAD( ma, MSCAN_RXDSR2 );
-	case 2:	frm.data[1] = MSREAD( ma, MSCAN_RXDSR1 );
-	case 1:	frm.data[0] = MSREAD( ma, MSCAN_RXDSR0 );
+	case 8:	frm.data[7] = MSREAD( ma, MSCAN_RXDSR7 ); FALLTHROUGH;
+	case 7:	frm.data[6] = MSREAD( ma, MSCAN_RXDSR6 ); FALLTHROUGH;
+	case 6:	frm.data[5] = MSREAD( ma, MSCAN_RXDSR5 ); FALLTHROUGH;
+	case 5:	frm.data[4] = MSREAD( ma, MSCAN_RXDSR4 ); FALLTHROUGH;
+	case 4:	frm.data[3] = MSREAD( ma, MSCAN_RXDSR3 ); FALLTHROUGH;
+	case 3:	frm.data[2] = MSREAD( ma, MSCAN_RXDSR2 ); FALLTHROUGH;
+	case 2:	frm.data[1] = MSREAD( ma, MSCAN_RXDSR1 ); FALLTHROUGH;
+	case 1:	frm.data[0] = MSREAD( ma, MSCAN_RXDSR0 ); FALLTHROUGH;
 	case 0:
 	default:
 		break;
