@@ -124,6 +124,17 @@ int main( int argc, char *argv[] )
 	char	*device[2],*str,*errstr,buf[40];
 
 	G_endMe = FALSE;
+
+/*--------------------+
+    |  clear can          |
+    +--------------------*/
+	printf("#################TEST##################\n");
+	
+    mscan_enable( path1, FALSE );
+    mscan_enable( path2, FALSE );
+	mscan_term(path1);
+	mscan_term(path2);
+
 	/*--------------------+
     |  check arguments    |
     +--------------------*/
@@ -202,7 +213,7 @@ int main( int argc, char *argv[] )
  ABT1:
 	printf("------------------------------------------------\n");
 	printf("TEST RESULT: %d errors\n", errCount );
-
+	UOS_SigExit();
 	ret = 0;
 	CHK( mscan_enable( path1, FALSE ) == 0 );
 	CHK( mscan_enable( path2, FALSE ) == 0 );
