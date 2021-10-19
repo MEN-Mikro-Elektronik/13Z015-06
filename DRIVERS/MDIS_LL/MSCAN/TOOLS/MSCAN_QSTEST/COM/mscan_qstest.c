@@ -30,10 +30,10 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sched.h>
 #include <MEN/men_typs.h>
 #include <MEN/usr_oss.h>
 #include <MEN/usr_utl.h>
@@ -122,20 +122,10 @@ int main( int argc, char *argv[] )
 	int stopOnFirst, runs=1, run, errCount=0;
 	u_int32 bitrate, spl=0;
 	char	*device[2],*str,*errstr,buf[40];
-
 	G_endMe = FALSE;
 
-/*--------------------+
-    |  clear can          |
-    +--------------------*/
-	printf("#################TEST##################\n");
-	
-    mscan_enable( path1, FALSE );
-    mscan_enable( path2, FALSE );
-	mscan_term(path1);
-	mscan_term(path2);
 
-	/*--------------------+
+    /*--------------------+
     |  check arguments    |
     +--------------------*/
 	if ((errstr = UTL_ILLIOPT("n=sb=?", buf))) {	/* check args */
@@ -213,7 +203,7 @@ int main( int argc, char *argv[] )
  ABT1:
 	printf("------------------------------------------------\n");
 	printf("TEST RESULT: %d errors\n", errCount );
-	UOS_SigExit();
+
 	ret = 0;
 	CHK( mscan_enable( path1, FALSE ) == 0 );
 	CHK( mscan_enable( path2, FALSE ) == 0 );
@@ -238,10 +228,10 @@ static void __MAPILIB SigHandler( u_int32 sigCode )
 {
 	switch( sigCode ){
 	case UOS_SIG_USR1:
-		G_sigUos1Cnt++;	
+		G_sigUos1Cnt++;
 		break;
 	case UOS_SIG_USR2:
-		G_sigUos2Cnt++;	
+		G_sigUos2Cnt++;
 		break;
 	default:
 		G_endMe = TRUE;
@@ -270,12 +260,13 @@ static int LoopbBasic( MDIS_PATH path1, MDIS_PATH path2 )
 	const int txObj = 5;
 	const int rxObj1 = 1;
 	const int rxObj2 = 2;
-
+	struct sched_param sp;
+   	int policy;
 	/* frames to send */
 	static const MSCAN_FRAME txFrm[] = {
 		/* ID,  flags,          dlen, data */
 		{ 0x12, 0,				1,   { 0xa5 } },
-		{ 0x45, 0,				8,   { 0x01, 0x02, 0x03, 0x04, 0x05, 
+		{ 0x45, 0,				8,   { 0x01, 0x02, 0x03, 0x04, 0x05,
 									   0x06, 0x07, 0x08 } },
 		{ 0x13218765,  MSCAN_EXTENDED, 2, { 0x99, 0xcc } },
 		{ 0x55, 0,				4,   { 0xff, 0x00, 0x7f, 0x1e } },
@@ -287,19 +278,24 @@ static int LoopbBasic( MDIS_PATH path1, MDIS_PATH path2 )
 	CHK( mscan_config_msg( path1, txObj, MSCAN_DIR_XMT, 10, NULL ) == 0 );
 
 	/* Rx object for standard messages */
-	CHK( mscan_config_msg( path2, rxObj1, MSCAN_DIR_RCV, 20, 
+	CHK( mscan_config_msg( path2, rxObj1, MSCAN_DIR_RCV, 20,
 						   &G_stdOpenFilter ) == 0 );
 
 	/* Rx object for extended messages */
-	CHK( mscan_config_msg( path2, rxObj2, MSCAN_DIR_RCV, 20, 
+	CHK( mscan_config_msg( path2, rxObj2, MSCAN_DIR_RCV, 20,
 						   &G_extOpenFilter ) == 0 );
 
+
+	policy = sched_getscheduler(0);
+
+	if(policy == SCHED_OTHER) {
+      sp.sched_priority = sched_get_priority_max(SCHED_FIFO);
+      sched_setscheduler(0, SCHED_FIFO, &sp);
 
 	for( i=0; i<sizeof(txFrm)/sizeof(MSCAN_FRAME); i++ ){
 
 		/* send one frame */
 		CHK( mscan_write_msg( path1, txObj, 1000, &txFrm[i] ) == 0 );
-		
 		/* wait for frame on correct object */
 		rxObj = txFrm[i].flags & MSCAN_EXTENDED ? rxObj2 : rxObj1;
 
@@ -313,6 +309,7 @@ static int LoopbBasic( MDIS_PATH path1, MDIS_PATH path2 )
 			CHK(0);
 		}
 	}
+}
 
     rv = 0;
 
