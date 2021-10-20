@@ -32,6 +32,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sched.h>
 #include <MEN/men_typs.h>
 #include <MEN/usr_oss.h>
 #include <MEN/usr_utl.h>
@@ -435,6 +436,9 @@ static int LoopbBasic( MDIS_PATH pathTx, MDIS_PATH pathRx, int32 timeout, int32 
 	const int rxObj1 = 1;
 	const int rxObj2 = 2;
 
+	struct sched_param sp;
+	int policy;
+
 	/* frames to send */
 	static const MSCAN_FRAME txFrm[] = {
 		/* ID,  flags,          dlen, data */
@@ -458,6 +462,12 @@ static int LoopbBasic( MDIS_PATH pathTx, MDIS_PATH pathRx, int32 timeout, int32 
 	CHK( mscan_config_msg( pathRx, rxObj2, MSCAN_DIR_RCV, 20,
 						   &G_extOpenFilter ) == 0 );
 
+	policy = sched_getscheduler(0);
+
+	if(policy == SCHED_OTHER) {
+      sp.sched_priority = sched_get_priority_max(SCHED_FIFO);
+      sched_setscheduler(0, SCHED_FIFO, &sp);
+
 
 	for( i=0; i<sizeof(txFrm)/sizeof(MSCAN_FRAME); i++ ){
 
@@ -478,8 +488,9 @@ static int LoopbBasic( MDIS_PATH pathTx, MDIS_PATH pathRx, int32 timeout, int32 
 				DumpFrame( "Sent", &txFrm[i] );
 				DumpFrame( "Recv", &rxFrm );
 				CHK(0);
+				}
 			}
-		}
+	    }
 	}
 
     rv = 0;
